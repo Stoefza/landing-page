@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.45 99.1">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 3.1px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-width: 2.25px;
+      }
+
+      .cls-3 {
+        stroke-width: 1.8px;
+      }
+
+      .cls-4 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Design">
+    <g id="Surfboard">
+      <path id="Board" class="cls-1" d="m16.72,97.55h0c.81,0,1.74-.11,2.58-.3,1.45-.34,2.78-1.87,3.44-3.88,5.08-15.55,11.22-41.53,8.47-60.53-2.1-14.48-7.65-23.2-14.49-31.29h0C9.88,9.64,4.33,18.35,2.23,32.84c-2.76,19,3.39,44.98,8.46,60.53.66,2.01,1.99,3.54,3.44,3.88.84.2,1.77.3,2.58.3h0"/>
+      <line id="Mid_Line" data-name="Mid Line" class="cls-2" x1="16.71" y1="10.31" x2="16.71" y2="90.95"/>
+      <line id="Line_Right" data-name="Line Right" class="cls-3" x1="22.95" y1="31.87" x2="22.95" y2="59.68"/>
+      <line id="Line_Left" data-name="Line Left" class="cls-3" x1="10.56" y1="31.87" x2="10.56" y2="59.68"/>
+      <path id="Fin" class="cls-4" d="m16.72,80.48c.94-1.01,3.15-1.18,4.47-.56.31.23.75-.15.7-.55-.34-2.83-2.37-4.64-5.16-4.64"/>
+    </g>
+  </g>
+</svg>
