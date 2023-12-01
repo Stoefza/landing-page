@@ -56,7 +56,7 @@ ul {
  }
 
  .hero-content {
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     display: flex;
     justify-content: space-between;
     /* max-width: 700px; */
@@ -67,7 +67,7 @@ ul {
  }
 
  .hero-left, .hero-right {
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     display: flex;
     flex-direction: column;
     gap: 1rem;
