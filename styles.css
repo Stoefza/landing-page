@@ -1,7 +1,10 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
-
+@font-face {
+   font-family: 'theTide';
+   src: url('./fonts/fonts/the-tide-modern-block-font-2023-11-27-05-11-40-utc/TheTide.woff') format('woff');
+}
 
 * {
     margin: 0;
@@ -28,8 +31,9 @@ ul {
 .header {
     display: flex;
     justify-content: space-between;
-    max-height: 120px;
+    max-height: 150px;
     padding-top: 20px;
+    
 
 }
 
@@ -38,15 +42,16 @@ ul {
     /* font-size: 24px; */
     color: #F9FAF8;
     /* font-weight: 700; */
-    justify-content: center;
+    justify-content: start;
     align-self:center;
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 130px;
+    /* max-width: 100px; */
+    width: 30%;
  }
 
  .logo img{
-    max-height: auto;
-    max-width: 80px;
+    max-height: 130px;
+    max-width: auto;
  }
 
  .link-icon {
@@ -57,6 +62,8 @@ ul {
 
  .header-links {
     display: flex;
+    width: 30%;
+    justify-content: end;
  }
 
  .list-links{
@@ -67,18 +74,41 @@ ul {
     gap: 16px;
     
  }
+
+ .header-text {
+   display: flex;
+   width: 30%;
+   justify-content: center;
+   align-items: center;
+   
+
+ }
+
+ .header-text p{
+   font-family: 'theTide';
+   font-size: 36px;
+   color: #e5e7eb
+ }
+
+
  .link, .hero-second{
     font-size: 18px;
     color: #e5e7eb;
+ }
+
+ .link {
+   font-weight: 200;
  }
 
  .hero-content {
     /* border: 1px solid salmon; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* max-width: 700px; */
     padding: 70px 0px;
     gap: 3rem;
+    max-height: 600px;
     
     
  }
@@ -89,35 +119,42 @@ ul {
     flex-direction: column;
     gap: 1rem;
     /* align-content: flex-start; */
-    /* min-width: 400px; */
-    /* max-width: 400px; */
+    max-height: 600px;
+    
     
  }
  .hero-right{
     justify-content: center;
-    align-items: center;
-    background-color: lightgray;
-    /* flex-grow: 2; */
-    max-width: 50%;
-    min-width: 50%;
+    align-items: end;
+    max-width: 45%;
+    height: 100%;
+    overflow: hidden;
+
  }
 
- .hero-left{
-    max-width: 50%;
+ .hero-right img {
+   height: 35%;
+   max-width: 35%;
+   object-fit: cover;
  }
 
- .hero-right img{
+.hero-left {
+   max-width: 45%;
+   flex-grow: 1;
+}
+
+ /* .hero-right img{
     
     max-width: 50%;
 
- }
+ } */
  
  .hero-btn {
     align-self: flex-start;
     padding: 8px 30px;
-    background-color: #3882f6;
+    background-color: #D39D46;
     border: none;
-    color: white;
+    color: #212121;
     border-radius: 8px;
     font-weight: 700;
     font-size: 16px; }
@@ -125,38 +162,71 @@ ul {
 
 
  .hero-main {
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 64px;
+    /* font-weight: 900; */
     color: #F9FAF8;
+    font-family: 'theTide';
     
+ }
+
+ .video-container {
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ #bg-video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
  }
 
 .info-content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 50px 100px;
+    z-index: 1;
+    height: 800px;
 }
 
 .info-header {
     display: flex;
     justify-content: center;
-    font-size: 36px;
-    font-weight: 900;
-    color: #1f2937;
-    padding-bottom: 50px;
+    font-size: 48px;
+    /* font-weight: 900; */
+    color: #D39D46;
+    padding-bottom: 20px;
     width: 100%;
+    background-color: #212121;
+
     
+}
+
+.info-header p{
+   font-family: 'theTide';
+   background-color: rgba(33, 33, 33, 0.25);
+   border: rgba(33, 33, 33, 0.5) transparent 1px;
+   border-radius: 8px;
+   padding: 1px;
 }
 
 .gallery {
     width: 100%;
+    align-items: center;
+
 }
 
 .gallery-list {
     display: flex;
     justify-content: space-around;
     gap: 3rem;
+    /* height: 400px; */
+    height: auto;
     
     
 }
@@ -164,20 +234,53 @@ ul {
 .gallery-card {
     display: flex;
     flex-direction: column;
-    height: 200px;
-    width: 200px;
+    
+    width: 300px;
     gap: 1rem;
+    background-color: rgba(33, 33, 33, 0.35);
+    border-radius: 8px;
 }
 
 .gal-img {
-    width: 100%;
-    height: 70%;
-    border: #3882f6 solid 3px;
-    border-radius: 12px;
+   align-self: center;
+   margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    /* border: #212121 solid 3px; */
+    /* border-radius: 12px; */
+    /* background-color: rgba(33, 33, 33, 0.10); */
+    border: rgba(33, 33, 33, 0.5) transparent 1px;
+    border-radius: 8px;
 }
 
 .gal-img-text {
-    height: 30%;
+    height: auto;
+    align-self: center;
+    padding: 20px 25px;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.gal-img-name {
+   font-family: "theTide";
+   font-size: 32px;
+   color: #d39d46;
+   align-self: center;
+}
+
+.quote-sect {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 50px 100px;
+   background-color: #e5e7eb;
+}
+
+.quote {
+   max-width: 60%;
+   font-size: 36px;
+   font-style: italic;
+   font-weight: 300;
 }
 
 
