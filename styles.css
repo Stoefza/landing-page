@@ -97,7 +97,7 @@ ul {
  }
 
  .link {
-   font-weight: 200;
+   font-weight: 400;
  }
 
  .hero-content {
@@ -188,10 +188,11 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 50px 100px;
+    justify-content: space-around;
+    padding: 50px 0px;
     z-index: 1;
     height: 800px;
+    width: 100%;
 }
 
 .info-header {
@@ -200,24 +201,24 @@ ul {
     font-size: 48px;
     /* font-weight: 900; */
     color: #D39D46;
-    padding-bottom: 20px;
     width: 100%;
-    background-color: #212121;
+    align-self:flex-start
 
     
 }
 
 .info-header p{
    font-family: 'theTide';
-   background-color: rgba(33, 33, 33, 0.25);
-   border: rgba(33, 33, 33, 0.5) transparent 1px;
+   text-shadow: 2px 2px 4px #000000;
    border-radius: 8px;
    padding: 1px;
+   align-self: flex-start;
 }
 
 .gallery {
     width: 100%;
     align-items: center;
+    
 
 }
 
@@ -272,20 +273,97 @@ ul {
    display: flex;
    flex-direction: column;
    align-items: center;
-   background-color: #e5e7eb;
+   background-color: #5D7D4E;
    max-width: 100%;
 }
 
+.quote-content {
+   display: flex;
+   flex-direction: column;
+   max-width: 60%;
+   margin: 70px 200px;
+}
+
 .quote {
-   max-width: 75%;
+   
    font-size: 36px;
    font-style: italic;
    font-weight: 300;
-   padding-bottom: 40px;
+   padding-bottom: 5px;
+   color: #E5E7EB;
 }
 .quote-auth {
+   align-self: flex-end;
+   color: #E5E7EB;
+   font-weight: 600;
+   font-size: 18px;
    
-   max-width: 75%;
+}
+
+.call-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 100%;
+   background-color: #212121;
+   height:400px;
+   width: auto;
+}
+
+.call-content {
+   display: flex;
+   justify-content: space-between;
+   max-width: 60%;
+   background-color: #D39D46;
+   height: 50%;
+   padding: 50px 100px;
+   border-radius: 16px;
+}
+
+.call-content-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 5px;
+   width: 70%;
+   height: auto;
+   font-size: 18px;
+}
+
+.call-action-header {
+   font-size: 24px;
+   font-weight: 700;
+
+}
+
+.call-action-btn {
+   width: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.action-btn {
+   padding: 8px 30px;
+   background-color: #D39D46;
+   border: none;
+   color: #212121;
+   border-radius: 8px;
+   font-weight: 700;
+   font-size: 16px;
+   border: #212121 solid 3px;
+}
+
+.footer {
+
+   width: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 10%;
+   padding-bottom: 30px;
+   color: #E5E7EB;
 }
 
 
